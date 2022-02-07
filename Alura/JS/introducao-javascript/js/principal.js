@@ -1,4 +1,5 @@
 var pacientes = document.querySelectorAll(".paciente");
+var botao = document.querySelector("#adicionar-paciente");
 
 
 for(i = 0; i < pacientes.length; i++){
@@ -31,3 +32,8 @@ for(i = 0; i < pacientes.length; i++){
         tdImc.textContent = "Erro";
     }
 }
+
+botao.addEventListener("click", function (event){
+    event.preventDefault();
+    console.log("Clique");
+});
