@@ -1,6 +1,8 @@
-var pacientes = document.querySelectorAll(".paciente");
-var botao = document.querySelector("#adicionar-paciente");
 
+
+
+var pacientes = document.querySelectorAll(".paciente");
+console.log(pacientes);
 
 for(i = 0; i < pacientes.length; i++){
     var paciente = pacientes[i];
@@ -33,19 +35,5 @@ for(i = 0; i < pacientes.length; i++){
     }
 }
 
-botao.addEventListener("click", function (event){
-    event.preventDefault();
-    
-    var form = document.querySelector("#form-adiciona");
-    var novaaltura = form.altura.value;
-    var novopeso = form.peso.value;
-    var novonome = form.nome.value;
-    var novagord = form.gordura.value;
-    console.log(novaaltura);
-    console.log(novopeso);
-    console.log(novonome);
-    console.log(novagord);
 
-
-});
 
