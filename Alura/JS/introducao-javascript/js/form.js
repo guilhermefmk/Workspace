@@ -4,10 +4,7 @@ botao.addEventListener("click", function (event){
     event.preventDefault();
     
     var form = document.querySelector("#form-adiciona");
-    var altura = form.altura.value;
-    var peso = form.peso.value;
-    var nome = form.nome.value;
-    var gordura  = form.gordura.value;
+    var paciente = catpaciente(form);
 
     var pacientetr = document.createElement("tr");
     var pesotd = document.createElement("td");
@@ -17,11 +14,11 @@ botao.addEventListener("click", function (event){
     var imctd = document.createElement("td");
 
     var listatd = [nometd, pesotd, alturatd, gorduratd, imctd];
-    pesotd.textContent = peso;
-    nometd.textContent = nome;
-    alturatd.textContent = altura;
-    gorduratd.textContent = gordura;
-    imctd.textContent = imc.toFixed(2);
+    pesotd.textContent = paciente.peso;
+    nometd.textContent = paciente.nome;
+    alturatd.textContent = paciente.altura;
+    gorduratd.textContent = paciente.gordura;
+    imctd.textContent = calculaImc(paciente.peso, paciente.altura);
 
     for(i = 0; i < listatd.length; i++){
         pacientetr.appendChild(listatd[i]);
@@ -31,3 +28,14 @@ botao.addEventListener("click", function (event){
     tabela.appendChild(pacientetr);
     
 });
+
+
+function catpaciente(form){
+    var paciente = {
+        nome: form.nome.value,
+        peso: form.peso.value,
+        altura: form.altura.value,
+        gordura: form.gordura.value
+    }
+    return paciente;
+}
