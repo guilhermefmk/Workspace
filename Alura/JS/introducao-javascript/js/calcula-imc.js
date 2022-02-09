@@ -2,7 +2,7 @@
 
 
 var pacientes = document.querySelectorAll(".paciente");
-console.log(pacientes);
+
 
 for(i = 0; i < pacientes.length; i++){
     var paciente = pacientes[i];
