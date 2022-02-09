@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/guilherme.cunha/AED/AED-I/C#/teste/teste.csproj": {}
+    "/home/guilherme.cunha/Workspace/AED-I/C#/teste/teste.csproj": {}
   },
   "projects": {
-    "/home/guilherme.cunha/AED/AED-I/C#/teste/teste.csproj": {
+    "/home/guilherme.cunha/Workspace/AED-I/C#/teste/teste.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/guilherme.cunha/AED/AED-I/C#/teste/teste.csproj",
+        "projectUniqueName": "/home/guilherme.cunha/Workspace/AED-I/C#/teste/teste.csproj",
         "projectName": "teste",
-        "projectPath": "/home/guilherme.cunha/AED/AED-I/C#/teste/teste.csproj",
+        "projectPath": "/home/guilherme.cunha/Workspace/AED-I/C#/teste/teste.csproj",
         "packagesPath": "/home/guilherme.cunha/.nuget/packages/",
-        "outputPath": "/home/guilherme.cunha/AED/AED-I/C#/teste/obj/",
+        "outputPath": "/home/guilherme.cunha/Workspace/AED-I/C#/teste/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/guilherme.cunha/.nuget/NuGet/NuGet.Config"
