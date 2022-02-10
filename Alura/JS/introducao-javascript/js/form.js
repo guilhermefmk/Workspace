@@ -8,6 +8,11 @@ botao.addEventListener("click", function (event){
 
     var pacientetr = montaTr(paciente);
 
+    if(!validaPaciente(paciente)){
+        alert("Paciente inválido!");
+        return;
+    }
+
     var tabela = document.querySelector("#tabela-pacientes");
     tabela.appendChild(pacientetr);
     
@@ -52,4 +57,13 @@ function montaTd(dado, classe){
     td.classList.add(classe);
 
     return td;
+}
+
+function validaPaciente(paciente){
+    
+    if(validaPeso(paciente.peso) && validaAltura(paciente.peso)){
+        return true;
+    }else{
+        return false;
+    }
 }
