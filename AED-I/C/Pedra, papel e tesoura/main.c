@@ -10,8 +10,8 @@ int main(){
     
     //VARIÁVEIS
     bool jogando = true, numValido = false;
-    char arr[3][20] = {"Pedra", "Papel", "Tesoura"}, *opcaoCharJogador, *opcaoCharMaquina;
-    int opJogador, opMaquina;
+    char arr[3][20] = {"Pedra", "Papel", "Tesoura"}, *opcaoCharMaquina;
+    int opJogador, opMaquina, jogarnov;
 
 
     while (jogando){
@@ -29,12 +29,22 @@ int main(){
         srand(time(NULL));
         opMaquina = rand() % 3;
 
-        opcaoCharJogador = arr[opJogador-1];
         opcaoCharMaquina = arr[opMaquina];
         
-
-
-
+        printf("O seu adversario escolheu %s\n", opcaoCharMaquina);
+	
+        if((opJogador == 1 && opMaquina == 2) || (opJogador == 3 && opMaquina == 1) || (opJogador == 2 && opMaquina== 0)){
+            printf("Ganhou!\n");
+        }
+        if((opJogador == 1 && opMaquina == 1) || (opJogador == 3 && opMaquina == 0) || (opJogador == 2 && opMaquina == 2)){
+            printf("Perdeu!\n");
+        }
+        if(opJogador == opMaquina-1){
+            printf("Empate!");
+    
+        }
         return 0;
+
     }
+    return 0;
 }
