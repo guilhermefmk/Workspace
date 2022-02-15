@@ -9,13 +9,13 @@
 int main(){
     
     //VARIÁVEIS
-    bool jogando = true, numValido = false;
+    bool jogando = true;
     char arr[3][20] = {"Pedra", "Papel", "Tesoura"}, *opcaoCharMaquina;
     int opJogador, opMaquina, jogarnov;
 
 
     while (jogando){
-
+		bool numValido = false;
 
         printf("Digite o número conforme as opções:\n (1)Pedra -- (2)Papel -- (3)Tesoura\n");
         while (!numValido){
@@ -40,11 +40,15 @@ int main(){
             printf("Perdeu!\n");
         }
         if(opJogador == opMaquina+1){
-            printf("Empate!");
+            printf("Empate!\n");
     
         }
-        return 0;
-
+        printf("Jogar novamente?");
+        scanf("%d", &jogarnov);
+        if(jogarnov == 1){
+            jogando = false;
+        }
+        
     }
     return 0;
 }
