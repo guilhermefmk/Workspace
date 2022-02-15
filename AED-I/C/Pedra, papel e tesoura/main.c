@@ -39,7 +39,7 @@ int main(){
         if((opJogador == 1 && opMaquina == 1) || (opJogador == 3 && opMaquina == 0) || (opJogador == 2 && opMaquina == 2)){
             printf("Perdeu!\n");
         }
-        if(opJogador == opMaquina-1){
+        if(opJogador == opMaquina+1){
             printf("Empate!");
     
         }
