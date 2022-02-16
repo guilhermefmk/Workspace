@@ -41,8 +41,9 @@ function montaTr(paciente){
     var alturatd = montaTd(paciente.altura, "info-altura");
     var gorduratd = montaTd(paciente.gordura, "info-gordura");
     var imctd = montaTd(paciente.imc, "info-imc");
+    var removertd = montaTd("-", "info-remover");
 
-    var listatd = [nometd, pesotd, alturatd, gorduratd, imctd];
+    var listatd = [nometd, pesotd, alturatd, gorduratd, imctd, removertd];
 
     for(i = 0; i < listatd.length; i++){
         pacientetr.appendChild(listatd[i]);

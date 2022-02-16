@@ -12,7 +12,7 @@ for(i = 0; i < pacientes.length; i++){
     var altura = tdAltura.textContent;
     var peso = tdPeso.textContent;
 
-    console.log(validaPeso(peso));
+
 
     if (validaAltura(altura) == false){
         tdAltura.textContent = "Altura inválida";
