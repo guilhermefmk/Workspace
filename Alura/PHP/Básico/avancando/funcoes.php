@@ -25,6 +25,6 @@ function exibemensagem($mensagem) {
 }
 
 function exibeconta(array $conta){
-    echo '<li>Titular: $conta[titular]. Saldo: {$conta['saldo']}</li>';
+    echo '<li>Titular: $conta[titular]. Saldo: $conta[saldo]</li>';
 }
 ?>
